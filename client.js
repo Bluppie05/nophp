@@ -1,4 +1,4 @@
-var nophp_server = "https://nophp-server.herokuapp.com/server.php"; // change this to your own nophp server
+var nophp_server = "https://nophp-server.000webhostapp.com/server.php"; // change this to your own nophp server
 
 function nophp(code, server) {
   var xhttp = new XMLHttpRequest();
