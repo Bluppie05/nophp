@@ -17,3 +17,6 @@ Now to run php you'll have to add the code below to your html document.
 # Setup server
 To setup your own noPHP server follow the steps below:
 1. Clone this repository to your computer(```git clone https://github.com/Bluppie05/nophp.git```)
+2. Upload / move the downloaded folder to your php webserver
+3. In client.js, change the nophp_server variable to the url of your own server.php file
+4. Add ```<script src="https://yourserver.com/path/to/client.js"></script><div id="nophp"></div>``` to your html file to use your new noPHP server
