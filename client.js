@@ -1,9 +1,10 @@
-var nophp_server = "https://nophp-server.000webhostapp.com/server.php"; // change this to your own nophp server
+var nophp_server = "https://nophp-server.herokuapp.com/server.php"; // change this to your own nophp server
 
 function nophp(code, server) {
   var xhttp = new XMLHttpRequest();
-  var api = nophp_server + "?code=" + code;
-  xhttp.open("GET", api, true);
+  xhttp.open("POST", nophp_server, true);
+
+  xhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
 
   xhttp.onload = function() {
     // start json parsing and processing
@@ -22,5 +23,7 @@ function nophp(code, server) {
     newrequest.send();
   }
 
-  xhttp.send();
+  var data = "code=" + code;
+
+  xhttp.send(data);
 }
