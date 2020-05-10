@@ -25,4 +25,4 @@ To setup your own noPHP server follow the steps below:
 - https://nophp-server.000webhostapp.com/client.js (fast)
 - https://nophp-server.herokuapp.com/client.js
 
-To get your public noPHP server in the list, make an issue.
+To get your public noPHP server in the list, make an issue with the "serverlist request" label where you place the link of your server's client.js file and some info.
