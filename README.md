@@ -8,6 +8,8 @@ To use noPHP you'll have to add the code below to your document.
 
 ```<script src="https://nophp-server.herokuapp.com/client.js"></script><div id="nophp"></div>```
 
+You can use a different noPHP server by ,changing the serverlink.
+
 Now to run php you'll have to add the code below to your html document.
 
 ```<script>nophp("<?php your php code ?>");</script>```
