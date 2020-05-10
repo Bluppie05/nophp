@@ -13,3 +13,7 @@ You can use a different noPHP server by ,changing the serverlink.
 Now to run php you'll have to add the code below to your html document.
 
 ```<script>nophp("<?php your php code ?>");</script>```
+
+# Setup server
+To setup your own noPHP server follow the steps below:
+1. Clone this repository to your computer(```git clone https://github.com/Bluppie05/nophp.git```)
