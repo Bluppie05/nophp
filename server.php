@@ -5,6 +5,7 @@ header('Access-Control-Allow-Origin: *'); // allow requests from foregein client
 // server settings
 $deletion = False;
 $block_prevention = True; // set this to true if your webserver has CORS disabled by default, set this to false if your webserver has CORS enabled by default or if you can change the CORS settings on your webserver to prevent buggs
+$blacklist = array("file_put_contents"); // Add commands to this list to blacklist them on your server, they won't work
 
 if(isset($_POST["code"])) {
   $code = $_POST["code"];
@@ -23,7 +24,19 @@ if(isset($_POST["code"])) {
     $code = str_replace("<?php", "<?php header('Access-Control-Allow-Origin: *'); ", $code); // enables access from different locations to prevent request blocking
   }
 
-  file_put_contents("tmp/$filename", $code); // make the temporary php file
+  $loopnum = 0; // defines the used variable for the loop
+  $blackcount = count($blacklist); // counts how many items are on the blacklist
+  $blackerror = False; // sets the error detector
+  while($loopnum < $blackcount) {
+    if(strpos($code, $blacklist[$loopnum]) !== false) {
+      file_put_contents("tmp/$filename", "Error: Used blacklisted component by the server"); // write an error to the temporary file
+      $blackerror = True; // sets error to true
+    }
+    $loopnum = $loopnum + 1; // updating loop
+  }
+  if(!$blackerror) {
+    file_put_contents("tmp/$filename", $code); // make the temporary php file
+  }
 
 // json output start
   header('Content-Type: application/json'); // setting json header
