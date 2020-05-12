@@ -1,3 +1,4 @@
+<html>
 <h1 id="nophp">noPHP</h1>
 
 <p>Run php inside javascript.</p>
@@ -42,3 +43,4 @@ Now to run php you'll have to add the code below to your html document.
 </ul>
 
 <p>To get your public noPHP server in the list, make an issue with the "serverlist request" label where you place the link of your server's client.js file and some info.</p>
+</html>
