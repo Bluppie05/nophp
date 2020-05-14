@@ -22,6 +22,10 @@ To setup your own noPHP server follow the steps below:
 4. In server.php, you can configure the server to your likings under server settings, so for example blacklist a function
 4. Add ```<script src="https://yourserver.com/path/to/client.js"></script><div id="nophp"></div>``` to your html file to use your new noPHP server
 
+# Changelog
+- v0.0.1: Added CORS bypassing
+- v0.0.2: Added command blacklist
+
 # Public noPHP server list
 - https://nophp-server.herokuapp.com/client.js (default) (reliable) (up2date)
 - https://nophp-server.000webhostapp.com/client.js (fast) (up2date)
