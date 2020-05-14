@@ -25,6 +25,7 @@ To setup your own noPHP server follow the steps below:
 # Changelog
 - v0.0.1: Added CORS bypassing
 - v0.0.2: Added command blacklist
+
 WARNING: Use versions before v0.1 at your own risk, these are alpha versions and are at high risk of hack attacks and could destroy your server.
 
 # Public noPHP server list
