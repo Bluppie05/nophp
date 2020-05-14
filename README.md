@@ -26,7 +26,7 @@ To setup your own noPHP server follow the steps below:
 - v0.0.1: Added CORS bypassing
 - v0.0.2: Added command blacklist
 
-WARNING: Use versions before v0.1 at your own risk, these are alpha versions and are at high risk of hack attacks and could destroy your server. Versions after v0.1 are beta versions and are much safer to use.
+WARNING: Use server versions before v0.1 at your own risk, these are alpha versions and are at high risk of hack attacks and could destroy your host server. Server versions after v0.1 are beta versions and are much safer to use.
 
 # Public noPHP server list
 - https://nophp-server.herokuapp.com/client.js (default) (reliable) (up2date)
